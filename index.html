@@ -1,1 +1,190 @@
+<!--NOTICE, THIS HTML HAS NO STYLING (CSS)-->
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List with Roman Numerals</title>
+</head>
+
+<!-- My Body -->
+<body>
+    <h2>Example Ordered List with Roman Numerals</h2>
+    
+    <!--an ordered list with roman numerals-->
+    <ol type="I">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+    </ol>
+
+    <!--an external image from pexels.com-->
+    <h2>Image from Pexels</h2>
+    <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg" 
+         alt="Beautiful nature landscape with mountains and lake" 
+         width="600"
+         style="border: 2px solid #333; border-radius: 8px;">
+    
+    <p><small>Photo from <a href="https://www.pexels.com" target="_blank">Pexels.com</a></small></p>
+
+    <h2>Contact List</h2>
+
+    <!--a table of 5 contacts with, name, address, mobile and emails -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sarah Johnson</td>
+                <td>123 Maple Street, Pretora, RSA</td>
+                <td>(555) 123-4567</td>
+                <td>sarah.johnson@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Chen</td>
+                <td>456 Oak Avenue, Cape Town, RSA</td>
+                <td>(555) 234-5678</td>
+                <td>michael.chen@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Rodriguez</td>
+                <td>789 Pine Road, Mafikeng, RSA</td>
+                <td>(555) 345-6789</td>
+                <td>emily.rodriguez@example.com</td>
+            </tr>
+            <tr>
+                <td>David Kim</td>
+                <td>321 Elm Boulevard, Bloem, RSA</td>
+                <td>(555) 456-7890</td>
+                <td>david.kim@example.com</td>
+            </tr>
+            <tr>
+                <td>Jessica Williams</td>
+                <td>654 Cedar Lane, Durban, RSA</td>
+                <td>(555) 567-8901</td>
+                <td>jessica.williams@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <section class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" action="#" method="post">
+            
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="fullName">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" 
+                       placeholder="Enter your full name" 
+                       required minlength="3" maxlength="50">
+            </div>
+            
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" 
+                       placeholder="example@domain.com" 
+                       required>
+            </div>
+            
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" 
+                       placeholder="Create a password (min 8 characters)" 
+                       required minlength="8">
+            </div>
+            
+            <!-- Date of Birth Field -->
+            <div class="form-group">
+                <label for="dob">Date of Birth*</label>
+                <input type="date" id="dob" name="dob" 
+                       required max="2020-01-01">
+            </div>
+            
+            <!-- Dropdown (Country Selection) -->
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="" selected disabled>Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <!-- Radio Buttons (Gender Selection) -->
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <span class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </span>
+                    <span class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </span>
+                    <span class="radio-option">
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </span>
+                    <span class="radio-option">
+                        <input type="radio" id="preferNot" name="gender" value="preferNot">
+                        <label for="preferNot">Prefer not to say</label>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Checkboxes (Interests) -->
+            <div class="form-group">
+                <label>Interests (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <span class="checkbox-option">
+                        <input type="checkbox" id="technology" name="interests" value="technology">
+                        <label for="technology">Technology</label>
+                    </span>
+                    <span class="checkbox-option">
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports</label>
+                    </span>
+                    <span class="checkbox-option">
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music</label>
+                    </span>
+                    <span class="checkbox-option">
+                        <input type="checkbox" id="travel" name="interests" value="travel">
+                        <label for="travel">Travel</label>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Terms and Conditions Checkbox -->
+            <div class="form-group">
+                <span class="checkbox-option">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions*</label>
+                </span>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+            
+            <!-- Note about required fields -->
+            <p><small>* indicates required field</small></p>
+        </form>
+    </section>
+</body>
+</html>
